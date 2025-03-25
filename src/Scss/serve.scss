@@ -1,0 +1,90 @@
+@import "./All.scss";
+
+
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background: #ff7b00;
+}
+
+/* Custom Dots */
+.custom-pagination {
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    background: #ddd;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #ff7b00;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.slide-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile */
+    .slide-text {
+        font-size: 1.2rem;
+    }
+    .text-container {
+        text-align: left;
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Tablet */
+    .text-container {
+        text-align: left;
+        padding: 20px;
+        width: 25%;
+        
+    }
+
+    .slide-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #222;
+    }
+}

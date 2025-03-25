@@ -1,0 +1,22 @@
+
+Body
+{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800; 
+    background-color: black;
+}
+
+*
+{
+    box-sizing: border-box;  
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+input,textarea::placeholder {
+    font: 0.9rem/3 sans-serif;
+}

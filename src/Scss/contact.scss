@@ -1,0 +1,21 @@
+.locationTamara {
+    height: 50vh;
+    width: 100%;
+    /* Full screen height */
+    overflow: hidden;  
+}
+
+.logo-tamara img {
+    width: 60%;
+    height: 100%;
+    
+}
+
+@media (max-width: 1024px) {
+    .locationTamara {
+            height: 67vh;
+            width: 100%;
+            /* Full screen height */
+            overflow: hidden;
+        }
+}
