@@ -90,7 +90,7 @@ export default function Memory() {
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className="gallery-slide" onClick={() => openModal(slide)}>
                             <img src={slide.image} alt={`Slide ${index}`} className="gallery-image" />
-                                            <NavLink to={slide.route} className="item-menu text-decoration-none"><p className='text-white fs-3 slide-text'>{slide.text}</p></NavLink>
+                                            <NavLink to={slide.route} className="item-menu text-decoration-none"><p className='text-white slide-text fw-bold'>{slide.text}</p></NavLink>
                             
                             
                         </SwiperSlide>

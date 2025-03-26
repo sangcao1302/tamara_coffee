@@ -16,8 +16,8 @@ export default function Header() {
             <NavLink to={"/home"} className="item-menu"><img src="/assets/image/tamara3white.png" alt="" /></NavLink>
         </div>
       <div className='menu w-50 d-flex justify-content-end align-items-center'>
-             <button className="btn text-white fs-3" onClick={toggleSidebar}>
-        ☰ 
+             <button className="btn text-white fs-3 rounded-1" onClick={toggleSidebar}>
+                <i className="fas fa-bars"></i>
       </button>
       </div>
      
@@ -25,10 +25,10 @@ export default function Header() {
      
 
       {/* Sidebar */}
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+      <div className={`sidebar ${isOpen ? "open" : ""} `} style={{background:"rgba(0,0,0,0.8)"}}>
         <button className="close-btn" onClick={toggleSidebar}>&times;</button>
         <h4 className="text-white text-center py-3">Menu</h4>
-        <ul className="menu-reponsive mt-4">
+        <ul className="menu-reponsive mt-4" >
             <li className='d-flex flex-column gap-4'>
                 <NavLink to={"/home"} className="item-menu" onClick={toggleSidebar}>🏠 Home</NavLink>
                 <NavLink to={"/about"} className="item-menu" onClick={toggleSidebar}>ℹ️ Giới thiệu</NavLink>

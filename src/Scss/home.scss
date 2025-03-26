@@ -31,13 +31,13 @@
 }
 .textHome p {
     font-size: calc(1.325rem + .9vw);
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
+    // font-family: 'Cormorant Garamond', serif;
+    // font-weight: 500;
 }
 @media (max-width: 768px) {
 .textHome p{
         font-size: calc(1.325rem + .9vw);
-        font-weight: 500;
+        // font-weight: 500;
     }
         .textHome {
             position: absolute;
