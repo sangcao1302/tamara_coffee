@@ -1,16 +1,126 @@
 @import "./All.scss";
-.img-memory {
-    background-image: url("../../public/assets/image/about.jpg");
+.gallery-container {
+   width: 100%;
+   height: 100vvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.custom-swiper {
+    max-width: 40%;
+}
+.gallery-slide{
     width: 100%;
-    height: 200px;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
-    h1{
-     text-align: center;
-     letter-spacing: 3px;
-     color: orange;
-     font-weight: bolder;
-    }
- }
+}
+.gallery-image {
+    max-width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.slide-text {
+    position: absolute;
+    /* ✅ Now absolute works */
+    top: 70%;
+    left: 80%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Add contrast */
+    // padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Modal Overlay (Ensure click doesn't block Swiper) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 0
+}
+
+/* Prevent click on modal from closing if clicking inside */
+
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+/* Modal Swiper */
+/* Make modal fullscreen */
+.modal-content {
+    position: relative;
+    width: 100vw;
+    /* Almost full width */
+    height: 100vh;
+    /* Almost full height */
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase Swiper size */
+.modal-swiper {
+    width: 100%;
+    height: 100vh;
+    /* Increase swiper height */
+}
+
+/* Increase image size */
+.modal-image {
+    width: 100%;
+    /* Adjust to fit container */
+    height: 100vh;
+    /* Maximize height */
+    object-fit: contain;
+    /* Keep aspect ratio */
+}
+
+
+.custom-swiper .swiper-pagination-bullet {
+    background: white !important;
+    /* White dots */
+    opacity: 0.5;
+    /* Slightly transparent */
+    width: 8px;
+    /* Bigger dots */
+    height: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Active dot styling */
+.custom-swiper .swiper-pagination-bullet-active {
+    background: #ffcc00 !important;
+    /* Highlight active dot in yellow */
+    opacity: 1;
+    /* Fully visible */
+    transform: scale(1.3);
+    /* Slightly enlarge active dot */
+}

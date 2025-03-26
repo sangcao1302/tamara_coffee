@@ -3,7 +3,7 @@ import "../Scss/menu.scss"
 import HTMLFlipBook from "react-pageflip";
 export default function Menu() {
     const images = [
-    "../assets/image/menu10.png",
+    "../assets/image/menu0.png",
     "../assets/image/menu1.png",
     "../assets/image/menu2.png",
     "../assets/image/menu3.png",
