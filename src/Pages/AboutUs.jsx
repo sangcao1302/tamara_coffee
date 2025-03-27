@@ -51,7 +51,7 @@ setIndex((prev) => (prev + 1) % slides.length);
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
-                <h2>{slides[index].text}</h2>
+                <h2 className='text-about'>{slides[index].text}</h2>
             </motion.div>
         </AnimatePresence>
         {/* Left Button */}
