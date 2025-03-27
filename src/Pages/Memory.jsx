@@ -18,7 +18,7 @@ const slides = [
     {
         image: "../assets/image/w17.jpg",
         text: "Đám cưới tại Tamara Coffee",
-        details: ["../assets/image/w17.jpg",  "../assets/image/w1.jpg","../assets/image/w2.jpg","../assets/image/w3.jpg","../assets/image/w4.jpg","../assets/image/w5.jpg","../assets/image/w6.jpg","../assets/image/w7.jpg","../assets/image/w8.jpg","../assets/image/w9.jpg","../assets/image/w10.jpg","../assets/image/w11.jpg","../assets/image/w12.jpg","../assets/image/w13.jpg","../assets/image/w14.jpg","../assets/image/w15.jpg","../assets/image/w16.jpg","../assets/image/w18.jpg", "../assets/image/w19.jpg","../assets/image/w20.jpg",],
+        details: ["../assets/image/w17.jpg",  "../assets/image/w1.jpg","../assets/image/w2.jpg","../assets/image/w3.jpg","../assets/image/w6.jpg","../assets/image/w9.jpg","../assets/image/w10.jpg","../assets/image/w11.jpg","../assets/image/w12.jpg","../assets/image/w13.jpg","../assets/image/w18.jpg", "../assets/image/w19.jpg","../assets/image/w20.jpg",],
   route:""
     },
     {
