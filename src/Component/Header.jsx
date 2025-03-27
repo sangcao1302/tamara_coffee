@@ -25,7 +25,7 @@ export default function Header() {
      
 
       {/* Sidebar */}
-      <div className={`sidebar ${isOpen ? "open" : ""} `} style={{background:"rgba(0,0,0,0.8)"}}>
+      <div className={`sidebar ${isOpen ? "open" : ""} `} style={{background:"rgba(0,0,0,0.4)"}}>
         <button className="close-btn" onClick={toggleSidebar}>&times;</button>
         <h4 className="text-white text-center py-3">Menu</h4>
         <ul className="menu-reponsive mt-4" >

@@ -11,9 +11,9 @@ import { NavLink } from 'react-router-dom';
 
 const slides = [
   { image: '../assets/image/tamaramenu.webp', text: 'Quán phục vụ các loại bánh và thức uống với phong cách sáng tạo' ,route:"/menu"},
-  { image: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/471512280_122177311310246115_5520191589039655114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=10dJjLQldqQQ7kNvgGKIGRK&_nc_oc=Adngm3UdEIALrZzp2oUn_lKRkjNBMhZKRSpU-z5z-5G87l45lb9FocKBoRqFDkDtIX4&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=gbaq-kQ10TRq8LW_vC_TLA&oh=00_AYHBob1knzSpFsTRtKXVgr3oi2Q_46XAUOSSOxaeVVjR7Q&oe=67E6B971', text: 'Tổ chức các buổi workshop đa dạng và thường xuyên' ,route:""},
+  { image: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/471512280_122177311310246115_5520191589039655114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=10dJjLQldqQQ7kNvgGKIGRK&_nc_oc=Adngm3UdEIALrZzp2oUn_lKRkjNBMhZKRSpU-z5z-5G87l45lb9FocKBoRqFDkDtIX4&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=gbaq-kQ10TRq8LW_vC_TLA&oh=00_AYHBob1knzSpFsTRtKXVgr3oi2Q_46XAUOSSOxaeVVjR7Q&oe=67E6B971', text: 'Tổ chức các buổi workshop đa dạng và thường xuyên' ,route:"/memory"},
   { image: '/assets/image/damcuoitamara.jpg', text: 'Là địa điểm lý tưởng chọn tổ chức tiệc cưới , sinh nhật và các sự kiện khác nhau',route:"/memory" },
-  { image: '/assets/image/slides1.jpg', text: 'Welcome to Our Café ☕' ,route:"/memory" },
+  { image: '/assets/image/slides1.jpg', text: 'Welcome to Our Café ☕' ,route:"" },
 ];
 
 export default function Serve() {
