@@ -118,7 +118,7 @@ const [firstLoad, setFirstLoad] = useState(true);
                   transition={{ duration: 0.3 }}>
 
                        <div className={`text-container ${deviceType} card-body d-flex align-items-center justify-content-center  bg-black   `}>
-                        <h2 className={`slide-text ${deviceType} text-white`} >{slide.text}</h2>
+                <NavLink to={slide.route} className="item-menu text-decoration-none"><h2 className="text-white text-uppercase text-center fs-6">{slide.text}</h2></NavLink>
                 </div>
                   </motion.div>
                  

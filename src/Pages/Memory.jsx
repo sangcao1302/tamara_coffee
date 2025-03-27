@@ -85,14 +85,19 @@ export default function Memory() {
                     loop={true}
                     pagination={{ clickable: true }} // ✅ Pagination dots only
                     modules={[EffectCoverflow, Pagination]}
+                       breakpoints={{
+        320: { slidesPerView: 1, spaceBetween: 10 }, // For small screens
+        640: { slidesPerView: 2, spaceBetween: 20 }, // Tablets
+        1024: { slidesPerView: 3, spaceBetween: 30 }, // Desktops
+      }}    
+                        //   style={{ width: "100%", height: "auto" }}
+
                     className="custom-swiper"
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className="gallery-slide" onClick={() => openModal(slide)}>
                             <img src={slide.image} alt={`Slide ${index}`} className="gallery-image" />
                                             <NavLink to={slide.route} className="item-menu text-decoration-none"><p className='text-white slide-text fw-bold'>{slide.text}</p></NavLink>
-                            
-                            
                         </SwiperSlide>
                     ))}
                 </Swiper>

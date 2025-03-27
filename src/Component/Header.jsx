@@ -30,12 +30,12 @@ export default function Header() {
         <h4 className="text-white text-center py-3">Menu</h4>
         <ul className="menu-reponsive mt-4" >
             <li className='d-flex flex-column gap-4'>
-                <NavLink to={"/home"} className="item-menu" onClick={toggleSidebar}>🏠 Home</NavLink>
-                <NavLink to={"/about"} className="item-menu" onClick={toggleSidebar}>ℹ️ Giới thiệu</NavLink>
-                <NavLink to={"/serve"} className="item-menu" onClick={toggleSidebar}>🛎️ Dịch vụ</NavLink>
-                <NavLink to={"/memory"} className="item-menu" onClick={toggleSidebar}>🖼️ Hình ảnh</NavLink>
-                 <NavLink to={"/blog"} className="item-menu" onClick={toggleSidebar}>📝 Câu chuyện</NavLink>
-                 <NavLink to={"/contact"} className="item-menu" onClick={toggleSidebar}>📞 Liên hệ - Đặt chỗ</NavLink>
+                <NavLink to={"/home"} className="item-menu" onClick={toggleSidebar}> Home</NavLink>
+                <NavLink to={"/about"} className="item-menu" onClick={toggleSidebar}> Giới thiệu</NavLink>
+                <NavLink to={"/serve"} className="item-menu" onClick={toggleSidebar}> Dịch vụ</NavLink>
+                <NavLink to={"/memory"} className="item-menu" onClick={toggleSidebar}> Hình ảnh</NavLink>
+                 <NavLink to={"/blog"} className="item-menu" onClick={toggleSidebar}> Câu chuyện</NavLink>
+                 <NavLink to={"/contact"} className="item-menu" onClick={toggleSidebar}> Liên hệ - Đặt chỗ</NavLink>
             </li>
         </ul>
       </div>

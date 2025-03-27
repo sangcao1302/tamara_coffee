@@ -19,9 +19,11 @@
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.4.5",
     "react-slick": "^0.30.3",
+    "react-swipeable": "^7.0.2",
     "sass": "^1.86.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.6",
+    "turn.js": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
