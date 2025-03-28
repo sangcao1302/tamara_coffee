@@ -11,6 +11,81 @@
     
 }
 
+.booking-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.form-submit {
+    grid-column: span 2;
+    /* Nút gửi trải dài 2 cột */
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive: Khi màn hình nhỏ hơn 600px, form sẽ về 1 cột */
+@media (max-width: 600px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-submit {
+        grid-column: span 1;
+    }
+}
+
 @media (max-width: 1024px) {
     .locationTamara {
             height: 67vh;
