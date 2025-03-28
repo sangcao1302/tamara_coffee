@@ -23,6 +23,7 @@
     "react-swipeable": "^7.0.2",
     "sass": "^1.86.0",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.17.2",
     "swiper": "^11.2.6",
     "turn.js": "^1.0.5",
     "web-vitals": "^2.1.4"

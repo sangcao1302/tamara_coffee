@@ -11,86 +11,92 @@
     
 }
 
-.booking-form {
-    max-width: 100%;
-    margin: 0 auto;
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
     padding: 20px;
-    background: #fff;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h4 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.form-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .form-column {
+    width: 48%;
+    /* Each column takes half of the form */
     display: flex;
     flex-direction: column;
 }
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 input,
 select,
-textarea {
+textarea,
+.form-control {
+    /* Ensures DatePicker styling is consistent */
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 textarea {
     height: 80px;
+    resize: none;
 }
 
 .form-submit {
-    grid-column: span 2;
-    /* Nút gửi trải dài 2 cột */
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 button {
-    padding: 12px 20px;
     background: #007bff;
     color: white;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #0056b3;
 }
 
-/* Responsive: Khi màn hình nhỏ hơn 600px, form sẽ về 1 cột */
+/* Responsive Design */
 @media (max-width: 600px) {
-    .form-container {
-        grid-template-columns: 1fr;
+    form {
+        flex-direction: column;
     }
 
-    .form-submit {
-        grid-column: span 1;
+    .form-column {
+        width: 100%;
     }
-}
-
-@media (max-width: 1024px) {
-    .locationTamara {
-            height: 67vh;
-            width: 100%;
-            /* Full screen height */
-            overflow: hidden;
-        }
 }
