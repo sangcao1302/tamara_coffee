@@ -79,9 +79,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-fluid">
-      <div className="form-container">
-        <h4 className="text-center mb-4">Form Submission to Google Sheet</h4>
+    <div className="container-fluid p-0">
+      <div className="form-container bg-dark">
         <form className="form-container p-5" onSubmit={handleSubmit}>
           <div className="form-column">
             <label>Service:</label>
@@ -122,7 +121,7 @@ const Contact = () => {
           </div>
 
           <div className="form-submit">
-            <button type="submit">Submit Request</button>
+            <button type="submit">Đăng ký</button>
           </div>
         </form>
       </div>

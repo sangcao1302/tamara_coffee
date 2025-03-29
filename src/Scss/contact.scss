@@ -22,8 +22,8 @@
 }
 
 .form-container {
-    background: #ffffff;
-    padding: 20px;
+    
+    
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,7 +45,9 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+.form-column label{
+    color: white;
+}
 label {
     font-weight: bold;
     margin-top: 10px;
@@ -59,7 +61,7 @@ textarea,
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -76,7 +78,7 @@ textarea {
 }
 
 button {
-    background: #007bff;
+    background:red;
     color: white;
     padding: 10px 15px;
     border: none;

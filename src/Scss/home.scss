@@ -3,44 +3,66 @@
 
 
   
-  .background-home{
-    width: 100%;
-    height: 100%;
-  }
+//  .container {
+//      width: 100%;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      padding: 20px;
+//  }
 
-.img-home {
+ .slider-container {
+     display: flex;
+     max-width: 100%;
+     /* Điều chỉnh theo ý muốn */
+    height: 85.5vh;
+    padding: 0;
+ }
 
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background-image: url('../../public/assets/image/bannertest.jpg');
-        background-size: cover;
+ /* Slide lớn bên trái */
+ .main-slider {
+     width: 75%;
+     overflow: hidden;
+ }
 
-        background-position: bottom center;
-        /* Aligns the top part of the image to the center */
-        z-index: -1;
+ .main-slider .swiper-slide {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-}
+ .main-slider .main-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius:5px;
+ }
 
-.textHome{
-    position: absolute;
-    top: 45%;
-    left: 0;
-    right: 0;
-}
-.textHome p {
-    font-size: calc(1.325rem + .9vw);
-    // font-family: 'Cormorant Garamond', serif;
-    // font-weight: 500;
-}
-@media (max-width: 768px) {
-.textHome p{
-        font-size: calc(1.325rem + .9vw);
-        // font-weight: 500;
-    }
-        .textHome {
-            position: absolute;
-            top: 35%;
-        }
-}
+ /* Slide hình thu nhỏ bên phải */
+ .thumb-slider {
+     width: 25%;
+     
+ }
+
+ .thumb-slider .swiper-slide {
+     cursor: pointer;
+     opacity: 0.6;
+     transition: opacity 0.3s ease;
+ }
+
+ .thumb-slider .swiper-slide-thumb-active {
+     opacity: 1;
+ }
+
+ .thumb-slider .thumb-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 5px;
+ }
+
+ /* Ẩn mũi tên điều hướng */
+//  .swiper-button-next,
+//  .swiper-button-prev {
+//      display: none !important;
+//  }
