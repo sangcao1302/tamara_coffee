@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div className='container-fluid p-0'>
-                <div className="slider-container">
+                <div className="slider-container-home">
       {/* Slide lớn bên trái */}
       <Swiper
         spaceBetween={10}

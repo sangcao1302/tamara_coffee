@@ -1,27 +1,118 @@
-@import "./All.scss";
-.slide{
+/* Main Container */
+.slider-container-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: auto;
+}
+.slide-content{
+ 
+        width: 100%;
+        height: 100%;
+       position: relative;
+
+}
+/* Slide Wrapper */
+.slider {
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    border-radius: 12px;
+}
+
+/* Individual Slide */
+.slide {
+    position: absolute;
+   width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+   
+}
+.slideFirst {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
-// .swiper-pagination-bullet {
-//     width: 15px;
-//     height: 15px;
-//     background: transparent;
-//     border: 2px solid white;
-//     opacity: 1;
-//     transition: 0.3s;
-//     margin: 5px !important;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 12px;
-//     font-weight: bold;
-//     color: orange;
-// }
+.textFristSlide {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  
+    color: white;
+    background: rgba(0, 0, 0, 0.5); // Semi-transparent background for readability
+    padding: 10px;
+    border-radius: 5px;
+}
+.slideFirst img{
+    width: 100%;
+    height: 100%;
+}
+/* Flipbook Container */
+.flipbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* Set height */
+}
 
-// .swiper-pagination-bullet-active {
-//     background: orange;
-//     color: black;
-//     transform: scale(1.2);
-// }
+/* Ensure Flipbook Fills Container */
+.flipbook {
+    width: 100%;
+    height: 150vh;
+    /* Take full height of parent */
+    background-color: black;
+}
+
+/* Ensure Pages Take Full Height */
+.flipbook .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: white;
+   width: 100%;
+  
+    /* Ensure full height */
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page p{
+    text-align: left;
+    color: black;
+    padding: 10%;
+}
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: opacity 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    opacity: 0.7;
+}
