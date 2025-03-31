@@ -83,18 +83,18 @@ const Contact = () => {
       <div className="form-container bg-dark">
         <form className="form-container p-5" onSubmit={handleSubmit}>
           <div className="form-column">
-            <label>Service:</label>
+            <label>Dịch vụ:</label>
             <select name="service" onChange={handleChange} value={formData.service}>
-              <option value="">Select Service</option>
+              <option value="">Chọn dịch vụ</option>
               <option value="Cafe">Cafe</option>
               <option value="Workshop">Workshop</option>
-              <option value="Wedding">Wedding</option>
+              <option value="Wedding">Đám cưới</option>
             </select>
 
-            <label>Name:</label>
+            <label>Họ và tên:</label>
             <input type="text" name="name" placeholder="Enter full name" value={formData.name} onChange={handleChange} required />
 
-            <label>Phone:</label>
+            <label>Số điện thoại:</label>
             <input type="tel" name="phone" placeholder="Enter phone number" onChange={handleChange} value={formData.phone} required />
           </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
             <label>Email:</label>
             <input type="email" name="email" placeholder="Enter email" onChange={handleChange} value={formData.email} required />
 
-            <label>Date and Time:</label>
+            <label>Ngày và giờ đặt:</label>
             <DatePicker
               selected={formData.date}
               onChange={handleDateChange}
@@ -116,7 +116,7 @@ const Contact = () => {
               required
             />
 
-            <label>Notes:</label>
+            <label>Ghi chú:</label>
             <textarea name="note" placeholder="Enter notes" onChange={handleChange} value={formData.note} />
           </div>
 
@@ -158,15 +158,13 @@ const Contact = () => {
           {/* Cột 3: Liên kết nhanh */}
           <div className="col-md-4 col-12">
                   <div>
-            <a href="#" className="text-light mx-2">
-              <i className="fab fa-facebook"></i>
+            <a href="https://www.facebook.com/TamaraCoffee.Sadec" className="text-light mx-2">
+              <i className="fab fa-facebook fs-4"></i>
             </a>
-            <a href="#" className="text-light mx-2">
-              <i className="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/tamara_vuonchala/" className="text-light mx-2">
+              <i className="fab fa-instagram fs-4"></i>
             </a>
-            <a href="#" className="text-light mx-2">
-              <i className="fab fa-twitter"></i>
-            </a>
+           
           </div>
           </div>
         </div>
@@ -177,6 +175,7 @@ const Contact = () => {
         {/* Cột cuối cùng: Bản quyền & MXH */}
         <div className="text-center ">
           <p>© 2025 Tamara Coffee. All rights reserved.</p>
+          <a href="mailto:caochisang1302@gmail.com" className="text-decoration-none text-white">Made by Sang</a>
         </div>
       </div>
     </footer>
