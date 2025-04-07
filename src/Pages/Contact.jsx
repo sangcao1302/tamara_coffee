@@ -89,6 +89,7 @@ const Contact = () => {
               <option value="Cafe">Cafe</option>
               <option value="Workshop">Workshop</option>
               <option value="Wedding">Đám cưới</option>
+              <option value="Wedding">Tour du lịch</option>
             </select>
 
             <label>Họ và tên:</label>
@@ -158,10 +159,10 @@ const Contact = () => {
           {/* Cột 3: Liên kết nhanh */}
           <div className="col-md-4 col-12">
                   <div>
-            <a href="https://www.facebook.com/TamaraCoffee.Sadec" className="text-light mx-2">
-              <i className="fab fa-facebook fs-4"></i>
-            </a>
-            <a href="https://www.instagram.com/tamara_vuonchala/" className="text-light mx-2">
+          <a href="https://www.facebook.com/TamaraCoffee.Sadec" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook fs-4"></i>
+        </a>
+            <a href="https://www.instagram.com/tamara_vuonchala/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram fs-4"></i>
             </a>
            
