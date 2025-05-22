@@ -89,7 +89,7 @@ const Contact = () => {
               <option value="Cafe">Cafe</option>
               <option value="Workshop">Workshop</option>
               <option value="Wedding">Đám cưới</option>
-              <option value="Wedding">Tour du lịch</option>
+              <option value="Tour">Tour du lịch</option>
             </select>
 
             <label>Họ và tên:</label>
