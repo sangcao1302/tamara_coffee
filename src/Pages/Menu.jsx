@@ -319,16 +319,16 @@ import HTMLFlipBook from "react-pageflip";
 
 function Book() {
   const images = [
-    "/assets/image/menu10.png",
-    "/assets/image/menu1.png",
-    "/assets/image/menu2.png",
-    "/assets/image/menu3.png",
-    "/assets/image/menu4.png",
-    "/assets/image/menu5.png",
-    "/assets/image/menu6.png",
-    "/assets/image/menu7.png",
-    "/assets/image/menu8.png",
-    "/assets/image/menu9.png",
+    "/assets/image/menu1.jpg",
+    "/assets/image/menu2.jpg",
+    "/assets/image/menu3.jpg",
+    "/assets/image/menu4.jpg",
+    "/assets/image/menu5.jpg",
+    "/assets/image/menu6.jpg",
+    "/assets/image/menu7.jpg",
+    "/assets/image/menu8.jpg",
+    "/assets/image/menu9.jpg",
+    "/assets/image/menu10.jpg",
   ];
   const pokemonData = [
     {
@@ -378,7 +378,7 @@ function Book() {
   return (
     <div className='container-fluid d-flex justify-content-center' style={{overflow:"hidden"}}>
              <HTMLFlipBook 
-      width={700} 
+      width={680} 
       height={750}
       maxShadowOpacity={0.5}
       drawShadow={true}
@@ -402,8 +402,8 @@ function Book() {
             <div className="pokemon-container">
               <img 
                 src={image} 
-                width={700}
-                height={800}
+                width={680}
+                height={700}
               />
               {/* <div className="pokemon-info">
                 <h2 className="pokemon-name">{pokemon.name}</h2>
