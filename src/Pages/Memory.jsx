@@ -22,7 +22,7 @@ const slides = [
   route:""
     },
     {
-        image: "../assets/image/menu10.png",
+        image: "../assets/image/menu1.jpg",
         text: "Thức uống và bánh ngọt tại Tamara Coffee",
         // details: ["../assets/image/menu10.png", "../assets/image/workshop10.jpg"],
         route:"/menu"
